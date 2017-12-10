@@ -1,23 +1,28 @@
 {
-    "name": "laravel-notification-channels/alohasms-ru",
-    "description": ":package_description",
-    "homepage": "https://github.com/laravel-notification-channels/alohasms-ru",
+    "name": "galo4kin/alohasms-ru",
+    "description": "AlohaSmsRu Notifications channel for Laravel 5.3.",
+    "keywords": ["laravel", "notifications", "alohasms"],
+    "homepage": "https://github.com/galo4kin/alohasms-ru",
     "license": "MIT",
     "authors": [
         {
             "name": "galo4kin",
+            "role": "Developer",
             "email": "galo4kin@gmail.com",
-            "role": "Developer"
+            "homepage": "https://github.com/galo4kin"
         }
     ],
     "require": {
         "php": ">=5.6.4",
-        "illuminate/notifications": "^5.3",
-        "illuminate/support": "^5.1|^5.2|^5.3"
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/queue": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "illuminate/notifications": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.5",
-        "phpunit/phpunit": "4.*"
+        "phpunit/phpunit": "^5.2",
+        "mockery/mockery": "^0.9.5"
     },
     "autoload": {
         "psr-4": {
@@ -29,10 +34,17 @@
             "NotificationChannels\\AlohaSmsRu\\Test\\": "tests"
         }
     },
+    "config": {
+        "sort-packages": true
+    },
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
-    "config": {
-        "sort-packages": true
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\AlohaSmsRu\\AlohaSmsRuServiceProvider"
+            ]
+        }
     }
 }

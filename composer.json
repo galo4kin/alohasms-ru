@@ -1,13 +1,12 @@
 {
-    "name": "laravel-notification-channels/:package_name",
+    "name": "laravel-notification-channels/alohasms-ru",
     "description": ":package_description",
-    "homepage": "https://github.com/laravel-notification-channels/:package_name",
+    "homepage": "https://github.com/laravel-notification-channels/alohasms-ru",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "galo4kin",
+            "email": "galo4kin@gmail.com",
             "role": "Developer"
         }
     ],
@@ -22,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\:channel_namespace\\": "src"
+            "NotificationChannels\\AlohaSmsRu\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\:channel_namespace\\Test\\": "tests"
+            "NotificationChannels\\AlohaSmsRu\\Test\\": "tests"
         }
     },
     "scripts": {
